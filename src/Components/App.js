@@ -18,7 +18,7 @@ export default class App extends Component {
                 {
                     id: 0,
                     text: "Головна",
-                    link: '/DiaCalculator'
+                    link: '/https://akmed0.github.io/DiaCalculator/'
                 },
                 {
                     id: 1,
@@ -58,7 +58,7 @@ export default class App extends Component {
             <div className='wrapper'>
                 <HeaderDesc navigation={this.state.navigation} />
                 <Routes>
-                    <Route path='/DiaCalculator' element={<HomePage title="DiaCalculator | Головна" />} />
+                    <Route path='/https://akmed0.github.io/DiaCalculator/' element={<HomePage title="DiaCalculator | Головна" />} />
                     <Route path='/calculator' element={<Calculator title="DiaCalculator | Калькулятор" />} />
                     <Route path='/full-list' element={<FullList title="DiaCalculator | Список продуктів" />} />
                 </Routes>
