@@ -18,7 +18,7 @@ export default class App extends Component {
                 {
                     id: 0,
                     text: "Головна",
-                    link: '/'
+                    link: '/DiaCalculator'
                 },
                 {
                     id: 1,
