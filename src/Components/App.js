@@ -18,17 +18,17 @@ export default class App extends Component {
                 {
                     id: 0,
                     text: "Головна",
-                    link: '/'
+                    link: '#/'
                 },
                 {
                     id: 1,
                     text: "Калькулятор",
-                    link: '/calculator'
+                    link: '#/calculator'
                 },
                 {
                     id: 2,
                     text: "Список продуктів",
-                    link: '/full-list'
+                    link: '#/full-list'
                 }
             ],
             soc: [
