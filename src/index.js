@@ -9,6 +9,8 @@ const app = ReactDOMClient.createRoot(document.getElementById("app"))
 
 app.render(
     <BrowserRouter>
-        <App />
+        <React.StrictMode>
+            <App />
+        </React.StrictMode>
     </BrowserRouter>
 )
