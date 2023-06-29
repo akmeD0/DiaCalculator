@@ -18,17 +18,17 @@ export default class App extends Component {
                 {
                     id: 0,
                     text: "Головна",
-                    link: '/'
+                    link: 'https://akmeD0.github.io/DiaCalculator/'
                 },
                 {
                     id: 1,
                     text: "Калькулятор",
-                    link: '/calculator'
+                    link: 'https://akmeD0.github.io/DiaCalculator/calculator'
                 },
                 {
                     id: 2,
                     text: "Список продуктів",
-                    link: '/full-list'
+                    link: 'https://akmeD0.github.io/DiaCalculator/full-list'
                 }
             ],
             soc: [
@@ -58,9 +58,9 @@ export default class App extends Component {
             <div className='wrapper'>
                 <HeaderDesc navigation={this.state.navigation} />
                 <Routes>
-                    <Route path='/' element={<HomePage title="DiaCalculator | Головна" />} />
-                    <Route path='/calculator' element={<Calculator title="DiaCalculator | Калькулятор" />} />
-                    <Route path='/full-list' element={<FullList title="DiaCalculator | Список продуктів" />} />
+                    <Route path='https://akmeD0.github.io/DiaCalculator/' element={<HomePage title="DiaCalculator | Головна" />} />
+                    <Route path='https://akmeD0.github.io/DiaCalculator/calculator' element={<Calculator title="DiaCalculator | Калькулятор" />} />
+                    <Route path='https://akmeD0.github.io/DiaCalculator/full-list' element={<FullList title="DiaCalculator | Список продуктів" />} />
                 </Routes>
                 <Footer navigation={this.state.navigation} soc={this.state.soc} />
             </div>
