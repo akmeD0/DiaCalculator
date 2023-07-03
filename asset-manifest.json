@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/DiaCalculator/static/css/main.7499e7d7.css",
-    "main.js": "/DiaCalculator/static/js/main.3982fa06.js",
+    "main.css": "/DiaCalculator/static/css/main.5b8c26d2.css",
+    "main.js": "/DiaCalculator/static/js/main.7445dbdc.js",
     "static/media/main__pic.png": "/DiaCalculator/static/media/main__pic.b8d679dcfc10475b2bdc.png",
     "static/media/logo.svg": "/DiaCalculator/static/media/logo.779e32a27d3cf773364f220c32fd2553.svg",
     "static/media/logo__footer.svg": "/DiaCalculator/static/media/logo__footer.44846841416f4266dd06b757197dc457.svg",
@@ -12,11 +12,11 @@
     "static/media/fb.svg": "/DiaCalculator/static/media/fb.bf3f84f7f0fda9ae7d0fa6b41b65bc44.svg",
     "index.html": "/DiaCalculator/index.html",
     "static/media/check.svg": "/DiaCalculator/static/media/check.04a05adafadeb3067396.svg",
-    "main.7499e7d7.css.map": "/DiaCalculator/static/css/main.7499e7d7.css.map",
-    "main.3982fa06.js.map": "/DiaCalculator/static/js/main.3982fa06.js.map"
+    "main.5b8c26d2.css.map": "/DiaCalculator/static/css/main.5b8c26d2.css.map",
+    "main.7445dbdc.js.map": "/DiaCalculator/static/js/main.7445dbdc.js.map"
   },
   "entrypoints": [
-    "static/css/main.7499e7d7.css",
-    "static/js/main.3982fa06.js"
+    "static/css/main.5b8c26d2.css",
+    "static/js/main.7445dbdc.js"
   ]
 }
