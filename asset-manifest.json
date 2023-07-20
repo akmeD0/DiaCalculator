@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/DiaCalculator/static/css/main.f6d9ec53.css",
-    "main.js": "/DiaCalculator/static/js/main.da1827c2.js",
-    "static/media/main__pic.png": "/DiaCalculator/static/media/main__pic.b8d679dcfc10475b2bdc.png",
-    "static/media/logo.svg": "/DiaCalculator/static/media/logo.779e32a27d3cf773364f220c32fd2553.svg",
-    "static/media/logo__footer.svg": "/DiaCalculator/static/media/logo__footer.44846841416f4266dd06b757197dc457.svg",
-    "static/media/inst.svg": "/DiaCalculator/static/media/inst.490b2cb228d2bd88f13fcca0fd168042.svg",
-    "static/media/in.svg": "/DiaCalculator/static/media/in.4477316c07c5a5f997032ae3b4cf0bc1.svg",
-    "static/media/search.svg": "/DiaCalculator/static/media/search.39e086bf2438ad2abb54a45b9abda43b.svg",
-    "static/media/circle bg.svg": "/DiaCalculator/static/media/circle bg.f7580d13fc6bf5f34ab177699bac75e0.svg",
-    "static/media/fb.svg": "/DiaCalculator/static/media/fb.bf3f84f7f0fda9ae7d0fa6b41b65bc44.svg",
-    "index.html": "/DiaCalculator/index.html",
-    "static/media/check.svg": "/DiaCalculator/static/media/check.04a05adafadeb3067396.svg",
-    "main.f6d9ec53.css.map": "/DiaCalculator/static/css/main.f6d9ec53.css.map",
-    "main.da1827c2.js.map": "/DiaCalculator/static/js/main.da1827c2.js.map"
+    "main.css": "//www.diacalculator.org/static/css/main.ca481974.css",
+    "main.js": "//www.diacalculator.org/static/js/main.cd6d169a.js",
+    "static/media/main__pic.png": "//www.diacalculator.org/static/media/main__pic.b8d679dcfc10475b2bdc.png",
+    "static/media/logo.svg": "//www.diacalculator.org/static/media/logo.779e32a27d3cf773364f220c32fd2553.svg",
+    "static/media/logo__footer.svg": "//www.diacalculator.org/static/media/logo__footer.44846841416f4266dd06b757197dc457.svg",
+    "static/media/inst.svg": "//www.diacalculator.org/static/media/inst.490b2cb228d2bd88f13fcca0fd168042.svg",
+    "static/media/in.svg": "//www.diacalculator.org/static/media/in.4477316c07c5a5f997032ae3b4cf0bc1.svg",
+    "static/media/search.svg": "//www.diacalculator.org/static/media/search.39e086bf2438ad2abb54a45b9abda43b.svg",
+    "static/media/circle bg.svg": "//www.diacalculator.org/static/media/circle bg.f7580d13fc6bf5f34ab177699bac75e0.svg",
+    "index.html": "//www.diacalculator.org/index.html",
+    "static/media/fb.svg": "//www.diacalculator.org/static/media/fb.bf3f84f7f0fda9ae7d0fa6b41b65bc44.svg",
+    "static/media/check.svg": "//www.diacalculator.org/static/media/check.04a05adafadeb3067396.svg",
+    "main.ca481974.css.map": "//www.diacalculator.org/static/css/main.ca481974.css.map",
+    "main.cd6d169a.js.map": "//www.diacalculator.org/static/js/main.cd6d169a.js.map"
   },
   "entrypoints": [
-    "static/css/main.f6d9ec53.css",
-    "static/js/main.da1827c2.js"
+    "static/css/main.ca481974.css",
+    "static/js/main.cd6d169a.js"
   ]
 }
