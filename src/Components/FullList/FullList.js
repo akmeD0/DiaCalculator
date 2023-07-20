@@ -1,10 +1,15 @@
 import React, { useState, useEffect, useCallback } from 'react'
 import { BsPlusCircle } from 'react-icons/bs'
 import Circle from '../Circle';
+import MyLoader from '../Skeleton';
 
-export default function FullList() {
+export default function FullList(props) {
 
     const [value, setValue] = useState('');
+    const [isLoading, setIsLoading] = useState(true);
+    const changeTitle = useCallback(() => {
+        document.title = props.title;
+    }, [props.title])
 
     // GETTING INFO FROM DATABASE
     const [items, setItems] = useState([]);
@@ -20,6 +25,7 @@ export default function FullList() {
             console.error(err);
         }).finally(() => {
             console.log('INFORMATION CONFIRMED')
+            setIsLoading(false)
         }, [])
     }, [])
     function formatResponse(result) {
@@ -30,9 +36,9 @@ export default function FullList() {
     }
     useEffect(() => {
         getAllSeries();
-    }, [getAllSeries]);
+        changeTitle();
+    }, [getAllSeries, changeTitle]);
     // --------------------------------
-
     const handleInputChange = (event) => {
         setValue(event.target.value);
     };
@@ -40,6 +46,7 @@ export default function FullList() {
     return (
         <main className='fulist'>
             <div className='fulist__cont cont'>
+                <h2 className='fulist__title'>Список продуктів</h2>
                 <div className='fulist__box'>
                     <input
                         className='fulist__search'
@@ -51,26 +58,32 @@ export default function FullList() {
                     />
                     <button className='fulist__btn'><BsPlusCircle />Додати</button>
                 </div>
+                <div className='items__length'>
+                    <h2>Продуктів у списку:</h2>
+                    <span>{items.length}</span>
+                </div>
                 <div className='fulist__list'>
-                    <div className='items__length'>
-                        <h2>Продуктів у списку:</h2>
-                        <span>{items.length}</span>
-                    </div>
-                    {items.filter((el) => {
-                        const name = (el.name).toLowerCase();
-                        return name.includes(value.toLowerCase())
-                    }).map((el) => (
-                        <div className='fulist__element' key={el.id}>
-                            <div className='fulist__left'>
-                                <img src={`https://drive.google.com/uc?export=view&id=${el.picture}`} className='fulist__picture' alt='Product' />
-                                <p>{el.name}</p>
-                            </div>
-                            <div className='fulist__right'>
-                                <p>Вуглеводів (на 100г):</p>
-                                <span>{el.carb} г</span>
-                            </div>
-                        </div>
-                    ))}
+                    {
+                        isLoading
+                            ?
+                            <MyLoader />
+                            :
+                            items.filter((el) => {
+                                const name = (el.name).toLowerCase();
+                                return name.includes(value.toLowerCase())
+                            }).map((el) => (
+                                <div className='fulist__element' key={el.id}>
+                                    <div className='fulist__left'>
+                                        <img loading='lazy' src={`https://drive.google.com/uc?export=view&id=${el.picture}`} className='fulist__picture' alt='Product' />
+                                        <p>{el.name}</p>
+                                    </div>
+                                    <div className='fulist__right'>
+                                        <p>Вуглеводів (на 100г):</p>
+                                        <span>{el.carb} г</span>
+                                    </div>
+                                </div>
+                            ))
+                    }
                 </div>
             </div>
             <Circle />

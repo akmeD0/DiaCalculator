@@ -34,14 +34,13 @@ export default class Calculator extends Component {
         )
     }
     onAddList(element) {
-        if (this.state.itemList.includes(element)) {
+        if (this.state.itemList.some((el) => el.id === element.id)) {
             alert('Цей продукт уже є в списку!')
         } else {
             this.setState({itemList: [...this.state.itemList, element]})
         }
     }
     onRemoveList(element) {
-        console.log(element.id)
         this.setState({
             itemList: this.state.itemList.filter((el) => el.id !== element.id)
         })

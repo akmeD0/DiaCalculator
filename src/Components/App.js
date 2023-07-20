@@ -56,7 +56,7 @@ export default class App extends Component {
     render() {
         return (
             <div className='wrapper'>
-                <HeaderDesc navigation={this.state.navigation} />
+                <HeaderDesc navigation={this.state.navigation} soc={this.state.soc} />
                 <Routes>
                     <Route path='/' element={<HomePage title="DiaCalculator | Головна" />} />
                     <Route path='/calculator' element={<Calculator title="DiaCalculator | Калькулятор" />} />
